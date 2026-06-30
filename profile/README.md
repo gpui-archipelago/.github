@@ -1,33 +1,29 @@
 # gpui-archipelago
 
-> Every fork is an island. This is where islands find each other: no mainland, no canonical shore, just builders and the water between them.
+> Every fork is an island. There's no mainland and no one's building one, so the islands have to find each other. Here they can.
 
-Nobody wanted to maintain a fork. We wanted Zed to maintain GPUI: versioned, stable, published. That didn't happen.
+Ideally, Zed would have published GPUI as a stable, versioned crate, but that didn't happen. Various people forked it instead, and each fork ended up solving a different part of the problem:
 
-So forks emerged. Each solving a piece of the problem differently:
+- **gpui-unofficial** — publishes up-to-date crates on crates.io, which covers distribution. Currently needs a maintainer.
+- **gpui-ce** — a semi-official community fork aimed at governance, still working out where it's headed.
+- **Kael** — deliberately stopped syncing with upstream; built for desktop apps (music player, video editor, etc.) Stepping off upstream buys it stability at the cost of compatibility with the other forks.
+- **Wgpui** — a capability fork built around a game engine. It swaps the rendering backend for wgpu on every platform and adds an escape hatch for 3D.
 
-- **gpui-unofficial** — published up-to-date crates on crates.io, solving the distribution problem. Needs a maintainer.
-- **gpui-ce** — a semi-official community fork, trying to solve the governance problem. Searching its own direction.
-- **Kael** — abandoned upstream sync by design, built for desktop apps (music player, video editor). Solves the stability problem by stepping off the upstream entirely. Makes it incompatible with other forks.
-- **Wgpui** — a capability fork built around a game engine, replacing the rendering backend with wgpu across all platforms and adding an escape hatch for 3D.
-
-Meanwhile people keep appearing in GitHub issues, Discord servers and Reddit threads, sharing the same frustrations, advertising their forks, looking for a home.
-
-This is that home.
+Meanwhile people keep turning up across GitHub issues, Discord, and Reddit threads with similar frustrations across these multiple projects.
 
 ## What this is
 
-A community-maintained space for people building with GPUI outside of Zed — whether that means running your own fork, depending on someone else's, or just trying to ship something without it breaking next week.
+`gpui-archipeligo` is a community-maintained space for anyone building with GPUI outside of Zed. Maybe you run your own fork, maybe you depend on someone else's, maybe you want to ship something on top of GPUI and minimize your chances of encountering unnecessary instability and breakage.
 
 The goal is not to pick a winner, but to understand the landscape: what each approach solves, what it doesn't, and where common ground might exist across forks.
 
 ## Two kinds of problems
 
 ### Ecosystem problems
-Problems with how GPUI exists in the world: distribution, stability, versioning, documentation, getting started. Often solvable without touching GPUI source code.
+Problems with how GPUI presents itself as a software project: distribution, stability, versioning, docs, guides for getting started at all. These are usually fixable without touching GPUI source code.
 
 ### Capability problems
-Problems with what GPUI can actually do: missing elements, missing escape hatches, missing extension points. These require code changes, and different forks may solve them incompatibly. This is where a shared spec matters most.
+Problems with what GPUI can do: missing elements, missing escape hatches, missing points where the API can be extended. These need code changes, and different forks may make those changes in incompatible ways. This is where a shared spec is useful.
 
 ## How issues are structured
 
@@ -39,37 +35,33 @@ Written from the perspective of someone who just hit this wall.
 What did they try to do, and what went wrong?
 
 ## Why it exists upstream
-Honest, neutral explanation of Zed's priorities or constraints
-that produced this gap. Not blame — just context.
+A plain explanation of the Zed priorities or constraints behind
+the gap. Give context, don't assign blame.
 
 ## How people currently solve it
-Known approaches — forks, crates, workarounds, conventions.
-Each approach: what it solves, what it doesn't, who maintains it.
+Known approaches: forks, crates, workarounds, conventions.
+For each one: what it solves, what it doesn't, who maintains it.
 
 ## What nobody has solved yet
-The honest remainder.
+The part that's still genuinely open.
 
 ## Common ground opportunity
-Optional. A convention, interface, or spec that multiple forks
-could adopt to stay compatible.
+Optional. A convention, interface, or spec that several forks
+could adopt to stay compatible with each other.
 ```
 
 ## How to contribute
 
-- **Add an issue** — open a PR with a new file in `issues/`. Partial drafts and LLM generated welcome, just be reasonable and concise.
-- **Add an approach** — know how a fork addresses an existing issue? Add it.
-- **Correct something** — wrong, outdated, or unfair? Open an issue or PR.
-- **Add your fork** — see `FORKS.md`. Any fork is welcome regardless of maturity.
-- **Share your experience** — started a fork, abandoned one, or learned something the hard way? That knowledge belongs here.
+- **Add an issue** — open a PR with a new file in `issues/`. Partial drafts and LLM-generated text are fine, just keep it reasonable and concise.
+- **Add an approach** — know how a fork handles an existing issue? Add it.
+- **Correct something** — wrong, stale, or unfair? Open an issue or PR.
+- **Add your fork** — see `FORKS.md`. Any fork is welcome, however immature.
+- **Share your experience** — started a fork, abandoned one, got burned and learned from it? Write it down here.
 
-## Honest disclaimer
+## Where this comes from
 
-This repo was started by someone who tried to avoid forking, failed to use upstream as is, and learned things in the process. There is bias here. The structure is designed to eliminate it — contributions from other islands are how this stays unopinionated.
+I started this repo after trying not to fork, failing to use upstream as-is, and picking up a few things along the way. So yes, there's a bias. Contributions from the other islands are what would keep this from being one person's opinion.
 
 ## Status
 
-Early. The structure exists. The issues don't yet. That's the contribution opportunity.
-
----
-
-*Forks are not fragmentation. They're how a distributed community expresses disagreement productively.*
+Still extremely alpha.
