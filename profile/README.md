@@ -1,4 +1,5 @@
 # gpui-archipelago
+### (aka GPUI-lago — "jee pyu ay la go")
 
 > Every fork is an island. There's no mainland and no one's building one, so the islands have to find each other. Here they can.
 
@@ -13,7 +14,7 @@ Meanwhile people keep turning up across GitHub issues, Discord, and Reddit threa
 
 ## What this is
 
-`gpui-archipeligo` is a community-maintained space for anyone building with GPUI outside of Zed. Maybe you run your own fork, maybe you depend on someone else's, maybe you want to ship something on top of GPUI and minimize your chances of encountering unnecessary instability and breakage.
+`gpui-archipelago` is a community-maintained space for anyone building with GPUI outside of Zed. Maybe you run your own fork, maybe you depend on someone else's, maybe you want to ship something on top of GPUI and minimize your chances of encountering unnecessary instability and breakage.
 
 The goal is not to pick a winner, but to understand the landscape: what each approach solves, what it doesn't, and where common ground might exist across forks.
 
