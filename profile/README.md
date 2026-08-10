@@ -7,8 +7,8 @@ Ideally, Zed would have published GPUI as a stable, versioned crate, but that di
 
 - **gpui-unofficial** — publishes up-to-date crates on crates.io, which covers distribution. Currently needs a maintainer.
 - **gpui-ce** — a semi-official community fork aimed at governance, still working out where it's headed.
-- **Kael** — deliberately stopped syncing with upstream; built for desktop apps (music player, video editor, etc.) Stepping off upstream buys it stability at the cost of compatibility with the other forks.
-- **Wgpui** — a capability fork built around a game engine. It swaps the rendering backend for wgpu on every platform and adds an escape hatch for 3D.
+- **Kael** — forked from GPUI direct; selectively tracks upstream while building out general-purpose features (gradients, webviews, form controls, component library).
+- **WGPUI** — a fork of gpui-ce that swaps the rendering/windowing backend for wgpu + winit. Unified code path across Windows, macOS, Linux, and WebAssembly. `WgpuSurface` lets you embed raw wgpu render passes (3D, game engines, custom shaders, anything) directly in your UI tree, makes WGPUI suitable as a shell for 3D applications and mixed-mode interfaces.
 
 Meanwhile people keep turning up across GitHub issues, Discord, and Reddit threads with similar frustrations across these multiple projects.
 
@@ -17,6 +17,16 @@ Meanwhile people keep turning up across GitHub issues, Discord, and Reddit threa
 `gpui-archipelago` is a community-maintained space for anyone building with GPUI outside of Zed. Maybe you run your own fork, maybe you depend on someone else's, maybe you want to ship something on top of GPUI and minimize your chances of encountering unnecessary instability and breakage.
 
 The goal is not to pick a winner, but to understand the landscape: what each approach solves, what it doesn't, and where common ground might exist across forks.
+
+## Forks at a glance
+
+| Fork | Stars | Forks | Crate |
+|---|---|---|---|
+| **[Zed (upstream GPUI)](https://github.com/zed-industries/zed)** | 88,000 | 10,000 | ⌛ |
+| **[gpui-ce](https://github.com/gpui-ce/gpui-ce)** | 780 | 85 | ⌛ |
+| **[gpui-unofficial](https://github.com/iamnbutler/gpui-unofficial)** | 40 | 7 | ✓ |
+| **[WGPUI](https://github.com/Far-Beyond-Pulsar/WGPUI)** | 29 | 6 | ✗ |
+| **[Kael](https://github.com/Augani/kael)** | 17 | 0 | ✓ |
 
 ## Two kinds of problems
 
@@ -56,7 +66,7 @@ could adopt to stay compatible with each other.
 - **Add an issue** — open a PR with a new file in `issues/`. Partial drafts and LLM-generated text are fine, just keep it reasonable and concise.
 - **Add an approach** — know how a fork handles an existing issue? Add it.
 - **Correct something** — wrong, stale, or unfair? Open an issue or PR.
-- **Add your fork** — see `FORKS.md`. Any fork is welcome, however immature.
+- **Add your fork** — see the Forks table above. Any fork is welcome, however immature.
 - **Share your experience** — started a fork, abandoned one, got burned and learned from it? Write it down here.
 
 ## Where this comes from
