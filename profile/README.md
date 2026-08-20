@@ -26,7 +26,7 @@ The goal is not to pick a winner, but to understand the landscape: what each app
 | **[gpui-ce](https://github.com/gpui-ce/gpui-ce)** | 925 | 105 | ⌛ |
 | **[gpui-unofficial](https://github.com/iamnbutler/gpui-unofficial)** | 44 | 7 | ✓ |
 | **[WGPUI](https://github.com/Far-Beyond-Pulsar/WGPUI)** | 64 | 12 | ✗ |
-| **[Kael](https://github.com/Augani/kael)** | 17 | 0 | ✓ |
+| **[Kael](https://github.com/Augani/kael)** | 34 | 2 | ✓ |
 
 ## Two kinds of problems
 
