@@ -23,8 +23,8 @@ The goal is not to pick a winner, but to understand the landscape: what each app
 | Fork | Stars | Forks | Crate |
 |---|---|---|---|
 | **[Zed (upstream GPUI)](https://github.com/zed-industries/zed)** | 88,000 | 10,000 | ⌛ |
-| **[gpui-ce](https://github.com/gpui-ce/gpui-ce)** | 780 | 85 | ⌛ |
-| **[gpui-unofficial](https://github.com/iamnbutler/gpui-unofficial)** | 40 | 7 | ✓ |
+| **[gpui-ce](https://github.com/gpui-ce/gpui-ce)** | 925 | 105 | ⌛ |
+| **[gpui-unofficial](https://github.com/iamnbutler/gpui-unofficial)** | 44 | 7 | ✓ |
 | **[WGPUI](https://github.com/Far-Beyond-Pulsar/WGPUI)** | 29 | 6 | ✗ |
 | **[Kael](https://github.com/Augani/kael)** | 17 | 0 | ✓ |
 
